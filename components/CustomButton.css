@@ -1,0 +1,28 @@
+.customButton {
+    font-family: celtichand;
+    font-size: 3rem;
+    display: inline-block;
+    border-radius: 10px;
+    transition: 0.6s all;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    border: solid 5px #000;
+    border-width: 0 4px 5px 0;
+    border-radius: 5px;
+    border-color: transparent #ddd #999 transparent;
+    background-clip: padding-box;
+    color: #647977;
+    text-shadow: 0px 0px 15px #00f3ff;
+    background: #8b9c9a;
+}
+
+.customButton:hover{
+    color: black;
+    text-shadow: 0px 0px 15px #a9fbff;
+    
+}
+
