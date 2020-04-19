@@ -1,0 +1,18 @@
+div#datesContainer {
+    width: 40%;
+    height: 100%;
+    display: grid;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+}
+
+div#datesContainer .customButton{
+    font-family: fantasy;
+    color: black;
+}
+
+div#datesContainer .customButton:active{
+    font-family: fantasy;
+    color: #00f3ff;
+}

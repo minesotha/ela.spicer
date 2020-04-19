@@ -1,6 +1,14 @@
 @font-face {
     font-family: celtichand;
     src: url(./projekt/celtichand.ttf);
+}
+
+:root {
+    --cursor-src: url(./projekt/cur.gif), auto !important;;
+  }
+
+body, html {
+    cursor: var(--cursor-src);
   }
 
 body {
@@ -8,7 +16,7 @@ body {
     height: 100%;
     position: absolute;
     margin: 0;
-    background-color: slategray;
+    background-color: black;
 }
 
 #background {
@@ -26,8 +34,11 @@ body {
 custom-button#horoskop {
     top: 20%;
     right: 20%;
+    position: absolute;
 }
+
 custom-button#tarot {
     top: 20%;
     left: 20%;
+    position: absolute;
 }

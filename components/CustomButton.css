@@ -4,25 +4,64 @@
     display: inline-block;
     border-radius: 10px;
     transition: 0.6s all;
-    position: absolute;
     text-align: center;
     font-weight: bold;
     height: 60px;
     line-height: 60px;
     padding: 0 20px;
-    border: solid 5px #000;
     border-width: 0 4px 5px 0;
     border-radius: 5px;
-    border-color: transparent #ddd #999 transparent;
     background-clip: padding-box;
-    color: #647977;
+    color: white;
     text-shadow: 0px 0px 15px #00f3ff;
-    background: #8b9c9a;
+    cursor: pointer;
 }
 
 .customButton:hover{
     color: black;
-    text-shadow: 0px 0px 15px #a9fbff;
-    
+    text-shadow: 0px 0px 15px #a9fbff;   
+}
+
+.customButton:active {
+    color: #00f3ff;
+}
+
+.customButton>label{
+    cursor: pointer;
+}
+
+
+.wrapper.visible{
+    transition: 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+}
+
+.wrapper{
+    opacity: 0;
+}
+
+.fog{
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.horoscopeImg {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
 }
 
