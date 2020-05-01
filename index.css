@@ -3,6 +3,10 @@
     src: url(./projekt/celtichand.ttf);
 }
 
+body, html {
+    cursor: var(--cursor-src);
+  }
+
 body {
     width: 100%;
     height: 100%;
