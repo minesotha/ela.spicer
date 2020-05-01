@@ -3,14 +3,6 @@
     src: url(./projekt/celtichand.ttf);
 }
 
-:root {
-    --cursor-src: url(./projekt/cur.gif), auto !important;;
-  }
-
-body, html {
-    cursor: var(--cursor-src);
-  }
-
 body {
     width: 100%;
     height: 100%;
@@ -28,7 +20,15 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+}
+
+img#el {
+    z-index: 0;
+    position: absolute;
+    bottom: 0px;
+    height: 80%;
+    margin: auto;
+    left: 15%;
 }
 
 custom-button#horoskop {
@@ -41,4 +41,16 @@ custom-button#tarot {
     top: 20%;
     left: 20%;
     position: absolute;
+}
+
+#home{
+    position: absolute;
+    top:3px;
+    left: 3px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#home:hover{
+    opacity: 1;
 }

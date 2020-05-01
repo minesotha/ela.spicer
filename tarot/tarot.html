@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tarot</title>
+    <meta name="description" content="Horoskop">
+    <meta name="author" content="Minesotha">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="tarot.css">
+    <script src="tarot.js"></script>
+
+</head>
+
+<body>
+    <a href="../index.html">
+        <img id="home" src="../projekt/main_page/home.svg"></img>
+    </a>
+
+    <img id="toggleInstruction" src="../projekt/tarot/guzik.png" onclick="toggleInstruction()"></img>
+    <custom-instruction backgroundImg="../projekt/tarot/background.png"></custom-instruction>
+
+    <custom-card id="startCard" img="../projekt/tarot/card_back.png" onstart="getCards()"></custom-card>
+
+    <div id="gameboardTable">
+        <img id="gameboard" src="../projekt/tarot/gameboard.png" class="hidden">
+    </div>
+
+    <script type="module" src="../components/CustomInstruction.js"> </script>
+    <script type="module" src="../components/CustomCard.js"> </script>
+    <script type="module" src="../components/TarotCard.js"> </script>
+</body>
+
+</html>
