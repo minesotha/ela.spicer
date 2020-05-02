@@ -1,10 +1,12 @@
 div#datesContainer {
-    width: 40%;
     height: 100%;
-    display: grid;
+    display: inline-grid;
     z-index: 1;
-    position: relative;
+    position: absolute;
     margin: auto;
+    left: 0;
+    right: 0;
+    width: fit-content;
 }
 
 div#datesContainer .customButton{
