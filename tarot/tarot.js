@@ -9,7 +9,7 @@ async function getCards() {
     for (let i = 0; i < cards.length; i++) {
         const element = cards[i];
         var cardText = getCardText(element);
-        var card = $('<tarot-card id="card' + i + '" img="../projekt/tarot/' + element + '.png" backImg="../projekt/tarot/card_back.png" explainerBackground="../projekt/tarot/explainer.jpg" explainerText="'+cardText+'"></tarot-card>');
+        var card = $('<tarot-card id="card' + i + '" img="../projekt/tarot/' + element + '.jpg" backImg="../projekt/tarot/card_back.jpg" explainerBackground="../projekt/tarot/explainer.jpg" explainerText="'+cardText+'"></tarot-card>');
         card.css('opacity', '0');
         card.animate({
             opacity: 1
