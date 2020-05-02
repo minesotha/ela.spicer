@@ -13,6 +13,8 @@ body {
     position: absolute;
     margin: 0;
     background-color: black;
+    cursor: none;
+    overflow: hidden;
 }
 
 #background {
@@ -52,9 +54,10 @@ custom-button#tarot {
     top:3px;
     left: 3px;
     opacity: 0.5;
-    cursor: pointer;
+    cursor: none;
 }
 
 #home:hover{
     opacity: 1;
+    cursor: none;
 }

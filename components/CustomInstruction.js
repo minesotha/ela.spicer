@@ -26,6 +26,9 @@ template.innerHTML = `
     text-decoration: underline;
     font-style: oblique;
 }
+label{
+    cursor:none;
+}
 
 </style>
 <img id="background"/>

@@ -8,7 +8,6 @@ template.innerHTML = `
     display: block;
     position: absolute;
     transition: 0.6s all;
-    cursor:pointer;
 }
 .card:hover {
     box-shadow: -1px -1px 8px 5px rgba(100, 100, 255, 0.6), 0 6px 20px 0 rgba(5, 60, 150, 0.5);
@@ -28,6 +27,7 @@ explainer{
     color: black;
     font-style: italic;
     font-size: 2.2vh;
+    cursor:none;
 }
 #front{
     opacity:1;
@@ -73,7 +73,6 @@ class TarotCard extends HTMLElement {
             this.$exp.appendChild(img);
         }
 
-        // this.$label = shadowRoot.querySelector('#explainerText');
         if (this.hasAttribute('explainerText')) {
             var label = document.createElement('label');
             var text = this.getAttribute('explainerText');
@@ -81,7 +80,6 @@ class TarotCard extends HTMLElement {
             label.id = "explainerText";
             this.$exp.appendChild(label);
         }
-
 
         this.onclick = () => {
             if (this.$front.classList.contains("hidden")) {
@@ -92,7 +90,6 @@ class TarotCard extends HTMLElement {
                 this.$exp.classList.toggle("hidden");
             }
         }
-
     }
 }
 customElements.define("tarot-card", TarotCard);

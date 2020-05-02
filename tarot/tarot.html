@@ -16,10 +16,10 @@
 </head>
 
 <body>
+    <custom-cursor img="../projekt/cursor_small.gif"></custom-cursor>
     <a href="../index.html">
         <img id="home" src="../projekt/main_page/home.svg"></img>
     </a>
-
     <img id="toggleInstruction" src="../projekt/tarot/guzik.png" onclick="toggleInstruction()"></img>
     <custom-instruction backgroundImg="../projekt/tarot/background.png"></custom-instruction>
 
@@ -29,6 +29,7 @@
         <img id="gameboard" src="../projekt/tarot/gameboard.png" class="hidden">
     </div>
 
+    <script type="module" src="../components/CustomCursor.js"> </script>
     <script type="module" src="../components/CustomInstruction.js"> </script>
     <script type="module" src="../components/CustomCard.js"> </script>
     <script type="module" src="../components/TarotCard.js"> </script>
