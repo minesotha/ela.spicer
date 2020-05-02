@@ -28,13 +28,21 @@ body {
     height: 100%;
 }
 
-img#el {
+img#el{
     z-index: 0;
     position: absolute;
-    bottom: 0px;
+    bottom: -100vh;
     height: 80%;
     margin: auto;
     left: 15%;
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
+}
+
+img#el.onplace {
+    bottom: 0px;
 }
 
 custom-button#horoskop {
