@@ -1,4 +1,4 @@
-.hidden{
+.hidden {
     display: none!important;
 }
 
@@ -39,17 +39,6 @@ tarot-card#card0 {
 
 tarot-card#card1 {
     position: absolute;
-    top: 8vh;
-    margin: 0 auto;
-    left: 83vh;
-    right: 0;
-    bottom: 0;
-    height: 34.1vh;
-    width: 22.6vh;
-}
-
-tarot-card#card2 {
-    position: absolute;
     bottom: 13vh;
     margin: 0 auto;
     right: 60vh;
@@ -58,12 +47,23 @@ tarot-card#card2 {
     width: 22.6vh;
 }
 
-tarot-card#card3 {
+tarot-card#card2 {
     position: absolute;
     bottom: 13vh;
     margin: 0 auto;
     left: 66vh;
     right: 0;
+    height: 34.1vh;
+    width: 22.6vh;
+}
+
+tarot-card#card3 {
+    position: absolute;
+    top: 8vh;
+    margin: 0 auto;
+    left: 83vh;
+    right: 0;
+    bottom: 0;
     height: 34.1vh;
     width: 22.6vh;
 }
