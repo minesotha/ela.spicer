@@ -9,12 +9,10 @@ async function getCards() {
     for (let i = 0; i < cards.length; i++) {
         const element = cards[i];
         var cardText = getCardText(element);
-        var card = $('<tarot-card id="card' + i + '" img="../projekt/tarot/' + element + '.jpg" backImg="../projekt/tarot/card_back.jpg" explainerBackground="../projekt/tarot/explainer.jpg" explainerText="'+cardText+'"></tarot-card>');
-        card.css('opacity', '0');
-        card.animate({
-            opacity: 1
-        }, 1000);
+        var card = $('<tarot-card id="card' + i + '" img="../projekt/tarot/' + element + '.jpg" backImg="../projekt/tarot/card_back.jpg" explainerBackground="../projekt/tarot/explainer.jpg" explainerText="' + cardText + '"></tarot-card>');
         $("#gameboardTable").append(card);
+        await new Promise(r => setTimeout(r, 1000));
+        card.addClass("positioned");
         await new Promise(r => setTimeout(r, 1000));
     }
 }

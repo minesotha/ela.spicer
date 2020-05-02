@@ -26,43 +26,82 @@ img#gameboard {
 }
 
 tarot-card#card0 {
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
     position: absolute;
-    top: 8vh;
     margin: 0 auto;
+    height: 34.1vh;
+    width: 22.6vh;
+    top: -40vh;
     right: 81vh;
     left: 0;
     bottom: 0;
-    height: 34.1vh;
-    width: 22.6vh;
+}
+
+tarot-card#card0.positioned{
+    top: 8vh;
+    right: 81vh;
+    left: 0;
+    bottom: 0;
 }
 
 tarot-card#card1 {
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
     position: absolute;
-    bottom: 13vh;
     margin: 0 auto;
-    right: 60vh;
-    left: 0;
     height: 34.1vh;
     width: 22.6vh;
+    bottom: 13vh;
+    left: -100vh;
+}
+
+tarot-card#card1.positioned{
+    bottom: 13vh;
+    right: 60vh;
+    left: 0;
 }
 
 tarot-card#card2 {
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
     position: absolute;
-    bottom: 13vh;
     margin: 0 auto;
-    left: 66vh;
-    right: 0;
     height: 34.1vh;
     width: 22.6vh;
+    bottom: -40vh;
+    right: 0;
+    left: 66vh;
+}
+
+tarot-card#card2.positioned{
+    bottom: 13vh;
+    left: 66vh;
+    right: 0;
 }
 
 tarot-card#card3 {
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
     position: absolute;
-    top: 8vh;
     margin: 0 auto;
+    height: 34.1vh;
+    width: 22.6vh;
+    top: 8vh;
+    right: -100vh;
+}
+
+tarot-card#card3.positioned{
+    top: 8vh;
     left: 83vh;
     right: 0;
     bottom: 0;
-    height: 34.1vh;
-    width: 22.6vh;
 }
